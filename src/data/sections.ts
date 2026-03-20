@@ -6,6 +6,7 @@ import three from "/images/three.jpg"
 import pick from "/images/turnie.mp4"
 import app from "/images/app.mp4"
 import exchange from "/images/exchange.mp4"
+import grass from "/images/grass.jpg"
 
 export const sections = [
   {
@@ -33,7 +34,7 @@ export const sections = [
       en: "Set your tune — a tiny 8×8 pixel canvas that's entirely yours. Pass someone carrying turnie, and your tunes swap automatically. No tapping, no requesting, no replying. Just a small piece of you, quietly landing in a stranger's pocket.",
       ja: "tuneを設定しよう。8×8ピクセルの小さなキャンバスは、あなただけのもの。\n turnieを持つ誰かとすれ違えば、tuneは自動的に交換される。\nタップも、リクエストも、返信も必要ない。あなたの小さな欠片が、静かに見知らぬ誰かのもとへ届く。",
     },
-    image: three,
+    image: grass,
     video: exchange,
     reverse: false,
   },
