@@ -1,4 +1,4 @@
-import bg from "/images/bg.png"
+import bg from "/images/bg.jpg"
 import { sections } from "./data/sections"
 import { links } from "./data/links"
 import P5Background from "./components/P5BG"
