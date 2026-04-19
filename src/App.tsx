@@ -1,16 +1,48 @@
+import { useState } from "react"
 import bg from "/images/bg.jpg"
 import { sections } from "./data/sections"
 import { links } from "./data/links"
 import P5Background from "./components/P5BG"
 
 function App() {
+  const [lang, setLang] = useState<"en" | "ja">(() => {
+    const path = window.location.pathname || "/";
+    return path.startsWith("/ja") ? "ja" : "en";
+  });
+
+  const toggleLang = () => {
+    const path = window.location.pathname || "/";
+    if (lang === "en") {
+      const newPath = path === "/" ? "/ja" : `/ja${path}`;
+      history.pushState(null, "", newPath);
+      setLang("ja");
+    } else {
+      const newPath = path.startsWith("/ja") ? path.replace(/^\/ja/, "") || "/" : path;
+      history.pushState(null, "", newPath);
+      setLang("en");
+    }
+  };
+
   return (
     <div className="w-full h-full min-h-dvh mx-auto p-6 text-sm  relative">
       <P5Background />
-      <header className="static md:fixed top-0 left-0 p-0 md:px-24 w-fit h-fit md:h-dvh flex flex-col justify-center">
-        <h1 className="text-2xl text-accent">
-          turnie
-        </h1>
+      <header className="static md:fixed top-0 left-0 p-0 md:px-24 w-full md:w-1/2 h-fit md:h-dvh flex flex-col justify-center">
+        <div className="flex items-center gap-3 w-full justify-between">
+          <h1 className="text-2xl text-accent">turnie</h1>
+          <button
+            onClick={toggleLang}
+            className="flex gap-1 text-sm font-bold text-fg-secondary cursor-pointer"
+            aria-label="Toggle language"
+          >
+            <span className={`${lang !== "en" ? "opacity-50" : ""}`}>
+              EN
+            </span>
+            /
+            <span className={`${lang === "en" ? "opacity-50" : ""}`}>
+              JA
+            </span>
+          </button>
+        </div>
         <p className="text-fg-secondary">Passing empathy</p>
       </header>
       <div className="flex gap-6 flex-col py-0 md:py-6 md:flex-row">
@@ -23,8 +55,7 @@ function App() {
             >
               <header className="w-full py-0 md:p-3 order-0 sm:order-1">
                 <h2>{section.title}</h2>
-                <p className="whitespace-pre-line">{section.description.en}</p>
-                {/* <p className="whitespace-pre-line">{section.description.ja}</p> */}
+                <p className="whitespace-pre-line">{section.description[lang] ?? section.description.en}</p>
               </header>
               {section.video
                 ? <video
