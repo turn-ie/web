@@ -12,8 +12,8 @@ export const sections = [
   {
     title: "turnie, StreetPass Device",
     description: {
-      en: "A charm-sized device that exchanges pixel messages \"tune\" with strangers you pass by.\n No chat.\n No follow.\n No pressure — just the quiet thrill of knowing someone was there.",
-      ja: "すれ違った誰かと、8bitのメッセージ「tune」を交換するチャーム型デバイス。\nチャットも、フォローも、面倒なやり取りもいりません。\nあるのはただ、誰かとすれ違ったという静かなワクワク感だけ。",
+      en: "A charm-sized device that exchanges 8×8 pixel messages \"tune\" with strangers you pass by.\n No chat.\n No follow.\n No pressure — just the quiet thrill of knowing someone was there.",
+      ja: "すれ違った誰かと、8×8ピクセルのメッセージ「tune」を交換するチャーム型デバイス。\nチャットも、フォローも、面倒なやり取りもいりません。\nあるのはただ、誰かとすれ違ったという静かなワクワク感だけ。",
     },
     video: pick,
     image: hand,
