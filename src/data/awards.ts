@@ -45,7 +45,7 @@ export const awards = [
         ja: "サンフランシスコ研修レポート",
         en: "San Francisco Training Report",
       },
-      url: "https://research-miyacology.tmu.ac.jp/entr/21108/",
+      url: "https://research-miyacology.tmu.ac.jp/news/27493/",
     },
   },
 ];
