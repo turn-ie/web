@@ -1,18 +1,17 @@
-import fashion from "/images/fashion.jpg"
-import hackaward from "/images/hackaward.jpg"
-import hand from "/images/hand.jpg"
-import parts from "/images/parts.jpg"
-import three from "/images/three.jpg"
-import pick from "/images/turnie.mp4"
-import app from "/images/app.mp4"
-import exchange from "/images/exchange.mp4"
-import grass from "/images/grass.jpg"
+import fashion from "/images/fashion.jpg";
+import hand from "/images/hand.jpg";
+import parts from "/images/parts.jpg";
+import three from "/images/three.jpg";
+import pick from "/images/turnie.mp4";
+import app from "/images/app.mp4";
+import exchange from "/images/exchange.mp4";
+import grass from "/images/grass.jpg";
 
 export const sections = [
   {
     title: "turnie, StreetPass Device",
     description: {
-      en: "A charm-sized device that exchanges 8×8 pixel messages \"tune\" with strangers you pass by.\n No chat.\n No follow.\n No pressure — just the quiet thrill of knowing someone was there.",
+      en: 'A charm-sized device that exchanges 8×8 pixel messages "tune" with strangers you pass by.\n No chat.\n No follow.\n No pressure — just the quiet thrill of knowing someone was there.',
       ja: "すれ違った誰かと、8×8ピクセルのメッセージ「tune」を交換するチャーム型デバイス。\nチャットも、フォローも、面倒なやり取りもいりません。\nあるのはただ、誰かとすれ違ったという静かなワクワク感だけ。",
     },
     video: pick,
@@ -29,7 +28,7 @@ export const sections = [
     reverse: true,
   },
   {
-    title: "\"tune\" Exchange",
+    title: '"tune" Exchange',
     description: {
       en: "Set your tune — a tiny 8×8 pixel canvas that's entirely yours. Pass someone carrying turnie, and your tunes swap automatically. No tapping, no requesting, no replying. Just a small piece of you, quietly landing in a stranger's pocket.",
       ja: "8×8ピクセルの小さなキャンバスに、あなただけの「tune」を描こう。\nあとはturnieを持って歩くだけ。誰かとすれ違えば、自動でメッセージが入れ替わります。\nフォローも、リクエストも、返信も不要。あなたのカケラが、誰かのポケットへそっと届きます。",
@@ -66,14 +65,4 @@ export const sections = [
     image: parts,
     reverse: false,
   },
-  {
-    title: "Awards",
-    description: {
-      en: "Recognized at TMU Business Idea Contest and WIRED Creative Hack Award for reimagining human connection through hardware — proving that sometimes, less really is more.",
-      ja: "TMUビジネスアイデアコンテストやWIRED Creative Hack Awardで高く評価されました。\n「つながり」をハードウェアで再定義したこのプロジェクトは、引き算をすることで生まれる豊かさを形にしています。",
-    },
-    image: hackaward,
-    reverse: false,
-  },
 ];
-
