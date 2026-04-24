@@ -1,7 +1,7 @@
 import { sections } from "../data/sections";
 export default function Sections({ lang }: { lang: "en" | "ja" }) {
   return (
-    <div>
+    <div className="flex flex-col gap-6">
       {sections.map((section) => (
         <section
           key={section.title}
