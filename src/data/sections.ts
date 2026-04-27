@@ -3,7 +3,7 @@ import hand from "/images/hand.jpg";
 import parts from "/images/parts.jpg";
 import three from "/images/three.jpg";
 import pick from "/images/turnie.mp4";
-import app from "/images/app.mp4";
+import app from "/images/howto.mp4";
 import exchange from "/images/exchange.mp4";
 import grass from "/images/grass.jpg";
 
