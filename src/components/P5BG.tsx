@@ -28,8 +28,8 @@ export default function P5Background() {
         const canvas = p.createCanvas(p.windowWidth, p.windowHeight);
         canvas.style("display", "block");
         p.colorMode(p.RGB, 255);
-        p.noStroke()
-        p.frameRate(1)
+        p.noStroke();
+        p.frameRate(1);
         initTiles();
       };
 
@@ -47,7 +47,7 @@ export default function P5Background() {
               ci * TILE_SIZE,
               ri * TILE_SIZE,
               TILE_SIZE - 1,
-              TILE_SIZE - 1
+              TILE_SIZE - 1,
             );
           }
         }

@@ -1,22 +1,22 @@
 export const links = [
   {
     url: "https://www.instagram.com/turnie.io/",
-    title: "Instagram"
+    title: "Instagram",
   },
   {
     url: "https://github.com/turn-ie",
-    title: "GitHub"
+    title: "GitHub",
   },
   {
     url: "https://www.instagram.com/trn_uk/",
-    title: "Nanako TORIU"
+    title: "Nanako TORIU",
   },
   {
     url: "https://www.instagram.com/kai.shiraishi/",
-    title: "Kai SHIRAISHI"
+    title: "Kai SHIRAISHI",
   },
   {
     url: "https://www.sakamura.dev/",
-    title: "Kusuke SAKAMURA"
+    title: "Kusuke SAKAMURA",
   },
-]
+];
